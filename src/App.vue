@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <headerView />
+  <NavbarWeb />
+  <SliderWeb />
+  <BodyWeb />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import BodyWeb from "./components/BodyWeb.vue";
+import headerView from "../src/components/Header.vue";
+import NavbarWeb from "./components/Navbar.vue";
+import SliderWeb from "./components/Slider.vue";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { headerView, NavbarWeb, SliderWeb, BodyWeb },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
