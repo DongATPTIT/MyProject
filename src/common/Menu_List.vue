@@ -9,10 +9,11 @@
             <span class="menu">Catelogue </span>
             <i class="drop-down"><DownOutlined /> </i>
           </div>
-
           <div class="menu-drawer" v-if="ShowDrawer">
             <ul class="drawer-menu-ul">
-              <li class="drawer-li">Best Sellers</li>
+              <li class="drawer-li">
+                <router-link to="/BestSellerPro">Best Sellers</router-link>
+              </li>
               <li class="drawer-li">Men's Fashion</li>
               <li class="drawer-li">Men's Swimwear</li>
               <li class="drawer-li">Men's Innerwear</li>
