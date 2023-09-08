@@ -3,11 +3,17 @@
     <div class="menu-list">
       <ul class="menu-ul">
         <p class="menu-content">Menu</p>
-        <li class="menu"><span class="menu-text">Home</span></li>
+        <li class="menu">
+          <span class="menu-text">
+            <router-link to="/"> Home </router-link></span
+          >
+        </li>
         <li class="menu-cate">
-          <div class="menu-text" @click="toggleDrawerMenu">
-            <span class="menu">Catelogue </span>
-            <i class="drop-down"><DownOutlined /> </i>
+          <div class="menu-text">
+            <span class="menu"
+              ><router-link to="/catalogue">Catelogue </router-link></span
+            >
+            <i @click="toggleDrawerMenu" class="drop-down"><DownOutlined /> </i>
           </div>
           <div class="menu-drawer" v-if="ShowDrawer">
             <ul class="drawer-menu-ul">

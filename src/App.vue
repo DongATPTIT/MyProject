@@ -1,25 +1,14 @@
 <template>
-  <headerView />
-  <NavbarWeb />
-  <SliderWeb />
-  <BodyWeb />
+  <HomeProject />
 </template>
 
 <script>
-import BodyWeb from "./components/BodyWeb.vue";
-import headerView from "../src/components/Header.vue";
-import NavbarWeb from "./components/Navbar.vue";
-import SliderWeb from "./components/Slider.vue";
+import HomeProject from "../src/App/Home.vue";
 export default {
   name: "App",
-  components: { headerView, NavbarWeb, SliderWeb, BodyWeb },
+  components: { HomeProject },
 };
 </script>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 </style>
